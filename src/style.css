@@ -1,0 +1,210 @@
+/* Font Styles start ******** */
+.poppins-thin {
+    font-family: "Poppins", system-ui;
+    font-weight: 100;
+    font-style: normal;
+}
+
+.poppins-extralight {
+    font-family: "Poppins", system-ui;
+    font-weight: 200;
+    font-style: normal;
+}
+
+.poppins-light {
+    font-family: "Poppins", system-ui;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.poppins-regular {
+    font-family: "Poppins", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.poppins-medium {
+    font-family: "Poppins", system-ui;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.poppins-semibold {
+    font-family: "Poppins", system-ui;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.poppins-bold {
+    font-family: "Poppins", system-ui;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.poppins-extrabold {
+    font-family: "Poppins", system-ui;
+    font-weight: 800;
+    font-style: normal;
+}
+
+.poppins-black {
+    font-family: "Poppins", system-ui;
+    font-weight: 900;
+    font-style: normal;
+}
+
+.poppins-thin-italic {
+    font-family: "Poppins", system-ui;
+    font-weight: 100;
+    font-style: italic;
+}
+
+.poppins-extralight-italic {
+    font-family: "Poppins", system-ui;
+    font-weight: 200;
+    font-style: italic;
+}
+
+.poppins-light-italic {
+    font-family: "Poppins", system-ui;
+    font-weight: 300;
+    font-style: italic;
+}
+
+.poppins-regular-italic {
+    font-family: "Poppins", system-ui;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.poppins-medium-italic {
+    font-family: "Poppins", system-ui;
+    font-weight: 500;
+    font-style: italic;
+}
+
+.poppins-semibold-italic {
+    font-family: "Poppins", system-ui;
+    font-weight: 600;
+    font-style: italic;
+}
+
+.poppins-bold-italic {
+    font-family: "Poppins", system-ui;
+    font-weight: 700;
+    font-style: italic;
+}
+
+.poppins-extrabold-italic {
+    font-family: "Poppins", system-ui;
+    font-weight: 800;
+    font-style: italic;
+}
+
+.poppins-black-italic {
+    font-family: "Poppins", system-ui;
+    font-weight: 900;
+    font-style: italic;
+}
+
+/* Font Styles end ******** */
+
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base {
+    .hovering {
+        @apply hover:bg-[#ececec] p-[0.18rem] rounded-md;
+    }
+}
+
+@layer utilities {
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+
+    ::-webkit-scrollbar {
+        width: 6px;
+        scrollbar-width: thin;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background-color: #ececec;
+        border-radius: 10px;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+        background-color: #ececec;
+    }
+
+    html {
+        scroll-behavior: smooth;
+    }
+
+    body {
+        background-color: #ffffff;
+        color: #7D7D7D;
+
+        font-family: Poppins;
+        font-size: 0.7rem;
+
+        min-height: 100vh;
+        min-height: 100svh;
+
+        scrollbar-width: thin;
+    }
+
+
+    main {
+        display: flex;
+        flex-direction: row;
+    }
+
+
+    main aside {
+        width: 0;
+        padding: 0;
+        opacity: 0;
+        visibility: hidden;
+    }
+
+
+    main aside.open-chat {
+        width: 12rem;
+        padding: 0.5rem;
+        opacity: 100;
+        visibility: visible;
+    }
+
+
+    .side-bar {
+        background-color: #f9f9f9;
+    }
+
+    .side-bar .side-bar-chats {
+        height: calc(100vh - 3rem);
+    }
+
+
+    section header button.hide-open-chat-2nd-btn {
+        display: none;
+    }
+
+
+    .chats {
+        height: calc(100vh - 3rem);
+    }
+
+    .conversations-container-style {
+        min-height: calc(100vh - 8rem);
+        height: 100%;
+    }
+}
